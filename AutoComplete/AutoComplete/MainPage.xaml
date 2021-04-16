@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             x:Class="AutoComplete.MainPage">
+    <StackLayout Padding="40">
+    <autocomplete:SfAutoComplete  HeightRequest="40" x:Name="autoComplete" Watermark="Enter Text">
+        <autocomplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>India</x:String>
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>Canada</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>France</x:String>
+                <x:String>United Kingdom</x:String>
+                <x:String>China</x:String>
+                <x:String>United States</x:String>
+                <x:String>Japan</x:String>
+                <x:String>Angola</x:String>
+            </ListCollection:List>
+        </autocomplete:SfAutoComplete.AutoCompleteSource>
+       </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
